@@ -1,15 +1,15 @@
 import React, {useContext} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
-import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
 import {
   greeting,
   workExperiences,
   skillsSection,
   openSource,
-  blogSection,
-  talkSection,
+  educationInfo,
+  // blogSection,
+  // talkSection,
   achievementSection
 } from "../../portfolio";
 
@@ -19,8 +19,8 @@ function Header() {
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
-  const viewBlog = blogSection.display;
-  const viewTalks = talkSection.display;
+  const viewEdu = educationInfo.display;
+  // const viewTalks = talkSection.display;
 
   return (
     <Headroom>
@@ -44,6 +44,11 @@ function Header() {
               <a href="#skills">Skills</a>
             </li>
           )}
+          {viewEdu && (
+            <li>
+              <a href="#education">Education</a>
+            </li>
+          )}
           {viewExperience && (
             <li>
               <a href="#experience">Work Experiences</a>
@@ -59,7 +64,7 @@ function Header() {
               <a href="#achievements">Achievements</a>
             </li>
           )}
-          {viewBlog && (
+          {/* {viewBlog && (
             <li>
               <a href="#blogs">Blogs</a>
             </li>
@@ -68,16 +73,16 @@ function Header() {
             <li>
               <a href="#talks">Talks</a>
             </li>
-          )}
+          )} */}
           <li>
             <a href="#contact">Contact Me</a>
           </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          {/* <li>
+            eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a>
               <ToggleSwitch />
             </a>
-          </li>
+          </li> */}
         </ul>
       </header>
     </Headroom>

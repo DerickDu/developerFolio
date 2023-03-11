@@ -7,6 +7,10 @@
 
 /* header */
 
+.menu {
+  font-size: 16px;
+}
+
 .dark-menu {
   background-color: $darkBackground !important;
   color: $textColorDark;
@@ -40,7 +44,7 @@
 
 .header li a {
   display: block;
-  padding: 15px 20px;
+  padding: 10px 12px;
   color: $textColor;
   text-decoration: none;
 }
@@ -66,6 +70,7 @@
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
+  color: rgb(47, 113, 91);
 }
 
 /* menu */
